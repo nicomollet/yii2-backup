@@ -1,6 +1,9 @@
 # Yii2-backup
 Backup and Restore functionality for Yii2 applications.
 
+This extension is a fork of:
+- [yii2-backup](https://github.com/amoracr/yii2-backup) by [Alonso Mora](https://github.com/amoracr),
+
 This extension is based on:
 - [yii2-backup](https://github.com/demisang/yii2-backup) by [Ivan Orlov](https://github.com/demisang),
 - [yii2-backup](https://github.com/elleracompany/yii2-backup) by [Ellera](https://github.com/elleracompany).
@@ -41,13 +44,13 @@ The preferred way to install this extension is through [composer](http://getcomp
 Either run
 
 ```
-php composer.phar require --prefer-dist amoracr/yii2-backup "*"
+php composer.phar require --prefer-dist nicomollet/yii2-backup "*"
 ```
 
 or add
 
 ```
-"amoracr/yii2-backup": "*"
+"nicomollet/yii2-backup": "*"
 ```
 
 to the require section of your `composer.json` file.
@@ -67,7 +70,7 @@ Minimal Config
 'components' => [
     ...
     'backup' => [
-            'class' => 'amoracr\backup\Backup',
+            'class' => 'nicomollet\backup\Backup',
             // Path for storing the backups
             'backupDir' => '@app/backups',
             // Directories that will be added to backup
@@ -97,7 +100,7 @@ Advanced Config
 'components' => [
     ...
     'backup' => [
-            'class' => 'amoracr\backup\Backup',
+            'class' => 'nicomollet\backup\Backup',
             // Name for the backup
             'fileName' => 'myapp-backup',
             // Maximum age in seconds for a valid backup.
