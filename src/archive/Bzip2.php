@@ -1,7 +1,7 @@
 <?php
 namespace nicomollet\backup\archive;
 
-use amoracr\backup\archive\Tar as TarArchive;
+use nicomollet\backup\archive\Tar as TarArchive;
 use Yii;
 use yii\base\InvalidConfigException;
 use \BadMethodCallException;
