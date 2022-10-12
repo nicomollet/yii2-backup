@@ -1,13 +1,5 @@
 <?php
-
-/**
- * @copyright Copyright (c) 2020 Alonso Mora
- * @license   https://github.com/amoracr/yii2-backup/blob/master/LICENSE.md
- * @link      https://github.com/amoracr/yii2-backup#readme
- * @author    Alonso Mora <alonso.mora@gmail.com>
- */
-
-namespace amoracr\backup\db;
+namespace nicomollet\backup\db;
 
 use yii\base\Component;
 use yii\base\InvalidConfigException;
