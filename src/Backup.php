@@ -48,8 +48,14 @@ class Backup extends Component
     /** @var integer Number of seconds of a year (365 days). */
     const DURATION_TIME_YEAR = 31536000;
 
-    /** @var string Pattern for backup names. */
-    const FILE_NAME_FORMAT = '%sT%s_%s';
+	/** @var string Pattern for backup names. */
+	const FILE_NAME_FORMAT = '%sT%s_%s';
+
+	/** @var string Pattern for dates. */
+	const DATE_FORMAT = 'Y-m-d';
+
+	/** @var string Pattern for times. */
+	const TIME_FORMAT = 'HisO';
 
     /** @var string Path/Alias to folder for backups storing. */
     public $backupDir = '';
@@ -446,7 +452,7 @@ class Backup extends Component
     {
         $config = [
             'path' => Yii::getAlias($this->backupDir) . DIRECTORY_SEPARATOR,
-            'name' => sprintf(self::FILE_NAME_FORMAT, date('Y-m-d', $this->_backupTime), date('HisO', $this->_backupTime), $this->fileName),
+            'name' => str_replace('+', '_', sprintf(self::FILE_NAME_FORMAT, date(self::DATE_FORMAT, $this->_backupTime), date(self::TIME_FORMAT, $this->_backupTime), $this->fileName)),
             'skipFiles' => $this->skipFiles,
         ];
         switch ($this->compression) {
