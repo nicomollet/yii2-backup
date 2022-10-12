@@ -1,4 +1,6 @@
 <?php
+namespace nicomollet\backup\archive;
+
 use nicomollet\backup\archive\Archive;
 use Yii;
 use yii\base\InvalidConfigException;
