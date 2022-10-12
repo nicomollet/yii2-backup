@@ -1,5 +1,5 @@
 {
-    "name": "amoracr/yii2-backup",
+    "name": "nicomollet/yii2-backup",
     "description": "Component for creating backups of Yii2 sites.",
     "type": "yii2-extension",
     "keywords": [
@@ -8,29 +8,22 @@
         "backup",
         "dump"
     ],
-    "homepage": "https://github.com/amoracr/yii2-backup",
+    "homepage": "https://github.com/nicomollet/yii2-backup",
     "license": "MIT",
     "authors": [
+        {
+            "name": "Nicolas Mollet",
+            "role": "Author"
+        },
         {
             "name": "Alonso Mora",
             "email": "alonso.mora@gmail.com",
             "role": "Creator"
         }
     ],
-    "support": {
-        "email": "alonso.mora@gmail.com",
-        "issues": "https://github.com/amoracr/yii2-backup/issues",
-        "source": "https://github.com/amoracr/yii2-backup"
-    },
-    "funding": [        
-        {
-            "type": "paypal",
-            "url": "https://paypal.me/adelfunscr"
-        }
-    ],
     "prefer-stable": true,
     "require": {
-        "php": "^5.1 || ^7.0 || ^8.0",
+        "php": "^7.0 || ^8.0",
         "ext-phar": "*",
         "ext-pdo": "*",
         "yiisoft/yii2": "~2.0.0"
@@ -54,7 +47,7 @@
     },
     "autoload": {
         "psr-4": {
-            "amoracr\\backup\\": "src"
+            "nicomollet\\backup\\": "src"
         }
     },
     "repositories": [
