@@ -1,7 +1,7 @@
 <?php
 namespace nicomollet\backup\archive;
 
-use amoracr\backup\archive\Archive;
+use nicomollet\backup\archive\Archive;
 use Yii;
 use \BadMethodCallException;
 use \Exception;
